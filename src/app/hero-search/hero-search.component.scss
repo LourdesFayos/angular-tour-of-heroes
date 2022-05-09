@@ -14,10 +14,11 @@ input {
     max-width: 600px;
     box-sizing: border-box;
     display: block;
+    background-color: lightgray;
 }
 
 input:focus {
-    outline: #336699 auto 1px;
+    outline: #36383a auto 1px;
 }
 
 li {
@@ -39,7 +40,7 @@ li {
 
 .search-result li a:hover {
     background-color: #435A60;
-    color: white;
+    color: lightgrey;
 }
 
 ul.search-result {
