@@ -21,9 +21,10 @@ body {
 body, input[type="text"], button {
     color: #333;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
-button {
+/*button {
     background-color: #eee;
     border: none;
     border-radius: 4px;
@@ -34,10 +35,14 @@ button {
     margin-right: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+}*/
+button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-color: #929597;
 }
 
 button:hover {
-    background-color: black;
+    background-color: #929597;
     color: white;
 }
 

@@ -1,4 +1,15 @@
 /* HeroDetailComponent's private CSS styles */
+h2 {
+    padding-top: 35px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 label {
     color: #435960;
     font-weight: bold;
@@ -11,15 +22,18 @@ input {
 
 button {
     margin-top: 20px;
-    background-color: #eee;
-    padding: 1rem;
-    border-radius: 4px;
-    font-size: 1rem;
+    margin-right: 20px;
+    //background-color: #eee;
+    padding: 8px;
+    border-radius: 9px;
+    //border-color: #929597;
+    font-size: 20px;
+    //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
 }
 
-button:hover {
-    background-color: #929597;
-}
+/*button:hover {
+    //background-color: #929597;
+}*/
 
 button:disabled {
     background-color: #eee;

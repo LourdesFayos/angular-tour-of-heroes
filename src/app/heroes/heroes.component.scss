@@ -1,23 +1,44 @@
 /* HeroesComponent's private CSS styles */
+h2 {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+div {
+    text-align: center;
+}
+
+.list-group {
+    padding-left: 41%;
+}
+
 .heroes {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
     width: 15em;
+    //padding-left: 43%;
+    //padding-right: 200%; 
 }
 
 .heroes li {
-    display: flex;
+    display:flex;
     position: relative;
     cursor: pointer;
-
+    text-align: left;
 }
 
-.heroes li:hover {
+.add-button {
+    margin-left: 20px;
+    border-radius: 9px;
+}
+
+
+/*.heroes li:hover {
     left: .1em;
-}
+}*/
 
-.heroes a {
+/*.heroes a {
     color: #333;
     text-decoration: none;
     background-color: #cfb6b6;
@@ -27,36 +48,39 @@
     border-radius: 4px;
     display: block;
     width: 100%;
-  }
 
-.heroes a:hover {
+    
+}*/
+
+/*.heroes a:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
-}
+}*/
 
-.heroes a:active {
+/*.heroes a:active {
     background-color: #525252;
     color: #fafafa;
-}
+}*/
 
 .heroes .badge {
     display: inline-block;
     font-size: small;
     color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color: #405061;
-    line-height: 1em;
+    //padding: 0.8em 0.7em 0 0.7em;
+    background-color: #37383a;
+    //line-height: 1em;
     position: relative;
-    left: -1px;
-    top: -4px;
-    height: 1.8em;
-    min-width: 16px;
+    //left: -1px;
+    //top: -4px;
+    //height: 1.8em;
+    //min-width: 16px;
     text-align: right;
     margin-right: .8em;
-    border-radius: 4px 0 0 4px;
+    //border-radius: 4px 0 0 4px;
+    
 }
 
-.heroes button {
+/*.heroes button {
     flex: 1;
     cursor: pointer;
     position: relative;
@@ -68,39 +92,40 @@
     display: flex;
     align-items: stretch;
     height: 1.8em;
-}
+}*/
 
-.heroes button:hover {
+/*.heroes button:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
     left: .1em;
-}
+}*/
 
-.heroes button:active {
+/*.heroes button:active {
     background-color: #525252;
     color: #fafafa;
-}
+}*/
 
-.heroes button.selected {
+/*.heroes button.selected {
     background-color: black;
     color: white;
-}
+}*/
 
-.heroes button.selected:hover {
+/*.heroes button.selected:hover {
     background-color: #505050;
     color: white;
-}
+}*/
 
-.heroes button.selected:active {
+/*.heroes button.selected:active {
     background-color: black;
     color: white;
-}
+}*/
 
-.heroes .name {
+/*.heroes .name {
     align-self: center;
-}
+   
+}*/
 
-button.delete {
+/*button.delete {
     position: absolute;
     left: 210px;
     top: 5px;
@@ -109,9 +134,9 @@ button.delete {
     font-size: 1.1rem;
     margin: 0;
     padding: 1px 10px 3px 10px;
-}
+}*/
 
-button.delete:hover {
+/*button.delete:hover {
     background-color: #525252;
     color: white;
-}
+}*/
