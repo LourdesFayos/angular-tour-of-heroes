@@ -1,27 +1,27 @@
 /* HeroDetailComponent's private CSS styles */
-h2 {
+.div_title {
     padding-top: 35px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-div {
+.div {
     text-align: center;
     padding-bottom: 10px;
 }
 
-label {
+.div_container_label {
     color: #435960;
     font-weight: bold;
     margin-right: 10px;
 }
 
-input {
+.div_container_input {
     font-size: 1em;
     padding: .5rem;
 }
 
-button {
+.div_button {
     margin-top: 20px;
     margin-right: 20px;
     padding: 8px;
@@ -29,7 +29,7 @@ button {
     font-size: 20px;  
 }
 
-button:disabled {
+.div_button:disabled {
     background-color: #eee;
     color: #ccc;
     cursor: auto;

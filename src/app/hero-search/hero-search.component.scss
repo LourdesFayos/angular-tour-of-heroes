@@ -1,6 +1,6 @@
 /* HeroSearch private styles */
 
-label {
+.div_label {
     display: block;
     font-weight: bold;
     font-size: 1.2rem;
@@ -12,7 +12,7 @@ label {
     
 }
 
-input {
+.div_input {
     padding: .5rem;
     width:100%;
     max-width: 300px;
@@ -20,15 +20,15 @@ input {
     display: block;
 }
 
-input:focus {
+.div_input:focus {
     outline: #c2c3c3 auto 1px;
 }
 
-li {
+.div_search_result_li{
     list-style-type: none;
 }
 
-.search-result li a {
+.div_search_result_a {
     border-bottom: 1px solid rgb(95, 89, 89);
     border-left: 1px solid rgb(95, 89, 89);
     border-right: 1px solid rgb(95, 89, 89);
@@ -41,12 +41,12 @@ li {
     color: rgb(48, 44, 44);
 }
 
-.search-result li a:hover {
+.div_search_result_a:hover {
     background-color: #4b575a;
     color: lightgrey;
 }
 
-ul.search-result {
+.div_search_result {
     margin-top: 0;
     padding-left: 0;
 }

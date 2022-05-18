@@ -1,10 +1,10 @@
 /* HeroesComponent's private CSS styles */
-h2 {
+.div_h2 {
     text-align: center;
     padding-bottom: 35px;
 }
 
-div {
+.div {
     text-align: center;
 }
 
@@ -12,30 +12,30 @@ div {
     padding-left: 41%;
 }
 
-.heroes {
+.list-group_heroes {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
     width: 15em;
 }
 
-.heroes li {
+.list-group_heroes_li {
     display:flex;
     position: relative;
     cursor: pointer;
     text-align: left;
 }
 
-.add-button {
+.new_hero_add_button {
     margin-left: 20px;
     border-radius: 9px;
 }
 
-label {
+.new_hero_label {
     margin-right: 10px;
 }
 
-.heroes .badge {
+.list-group_heroes .badge {
     display: inline-block;
     font-size: small;
     color: white;

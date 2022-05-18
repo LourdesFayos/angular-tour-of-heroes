@@ -1,11 +1,11 @@
 /* MessagesComponent's private CSS styles */
-h2 {
+.div_h2 {
     color: #A80000;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
 }
 
-.clear {
+.div_button_clear {
     color: #333;
     background-color: #eee;
     margin-bottom: 12px;
@@ -14,7 +14,7 @@ h2 {
     font-size: 1rem;
 }
 
-.clear:hover {
+.div_button_clear:hover {
     color: white;
     background-color: #42545C;
 }

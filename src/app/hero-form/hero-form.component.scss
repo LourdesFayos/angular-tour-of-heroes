@@ -6,23 +6,23 @@
     border-left: 5px solid #a94442; /* red */
 }
 
-label {
+.form_group_label {
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-button {
+.form_button, .div_button {
     border-radius: 9px;
     margin-right: 20px;
 }
 
-button:hover {
+.form_button:hover {
     background-color: #42A948;
     color: white;
 }
 
-input {
-    font-family: Arial, Helvetica, sans-serif;
+.form_group_input form-control {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .col-xs-3 {

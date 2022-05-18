@@ -1,9 +1,9 @@
-<div>
+<div class="div">
 
-    <h2>My Heroes</h2>
+    <h2 class="div_h2">My Heroes</h2>
     <div class="list-group">
-        <ul class="heroes">
-            <li *ngFor="let hero of heroes">
+        <ul class="list-group_heroes">
+            <li class="list-group_heroes_li" *ngFor="let hero of heroes">
                 <a class="list-group-item list-group-item-action" routerLink="/detail/{{hero.id}}">
                     <span class="badge">{{hero.id}}</span>
                     <span class="name">{{hero.name}}</span>
@@ -18,12 +18,12 @@
         </ul>
     </div>
 
-    <div>
-        <label for="new-hero">Hero name: </label>
+    <div class="new_hero">
+        <label class="new_hero_label" for="new-hero">Hero name: </label>
         <input id="new-hero" #heroName />
         <!-- ((click) le pasa el valor de la entrada a add() y luego 
         borra esa entrada -->
-        <button type="button" class="add-button" 
+        <button type="button" class="new_hero_add_button" 
         (click)="add(heroName.value); heroName.value=''">Add hero
         </button>
     </div>
