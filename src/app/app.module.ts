@@ -16,6 +16,10 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import { MessagesModule } from 'primeng/messages';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +35,9 @@ import { HeroFormComponent } from './hero-form/hero-form.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ConfirmDialogModule,
+    MessagesModule,
+    BrowserAnimationsModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

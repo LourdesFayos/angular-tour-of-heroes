@@ -6,6 +6,7 @@ import { Hero } from '../hero';
   templateUrl: './hero-form.component.html',
   styleUrls: ['./hero-form.component.scss']
 })
+
 export class HeroFormComponent {
 
   powers = ['Really Smart', 'Super Flexible', 'Super Hot', 'Weather Changer'];
@@ -19,10 +20,5 @@ export class HeroFormComponent {
   newHero() {
     this.model = new Hero(42,'','');
   }
-
-  //constructor() { }
-
-  /*ngOnInit(): void {
-  }*/
 
 }

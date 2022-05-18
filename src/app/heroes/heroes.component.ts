@@ -1,32 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
-//import { MessageService } from '../message.service';
+
+import {ConfirmationService, PrimeNGConfig, Message} from 'primeng/api';
 
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.scss']
+  styleUrls: ['./heroes.component.scss'],
+  providers: [ConfirmationService]
 })
+
 export class HeroesComponent implements OnInit {
-  /*hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };*/
+
   heroes: Hero[] = [];
 
-  //selectedHero?: Hero;
-  
-  /*onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add('HeroesComponent: Selected hero id=${hero.id}');
-  }*/
+  msgs: Message[] = [];
 
-  constructor(private heroService: HeroService) { }
-
-  /*getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
-  }*/
+  //constructor(private heroService: HeroService) { }
+  constructor(private confirmationService: ConfirmationService, private primengConfig: PrimeNGConfig, private heroService: HeroService) {}
   
   //Observable
   getHeroes():void {
@@ -35,6 +27,7 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getHeroes();
+    this.primengConfig.ripple = true;
   }
 
   add(name: string): void {
@@ -42,9 +35,27 @@ export class HeroesComponent implements OnInit {
     if (!name) { return; }
     this.heroService.addHero({ name } as Hero).subscribe(hero => {this.heroes.push(hero);});
   }
+  
  //Metodo que elimina el heroe de la lista
   delete(hero: Hero): void {
     this.heroes = this.heroes.filter(h => h !== hero);
     this.heroService.deleteHero(hero.id).subscribe();
   }
+
+  //Metodo para confirmar el borrado de datos de la lista de heroes
+  confirm(hero: Hero) {
+    this.confirmationService.confirm({
+        message: 'Do you want to delete this record?',
+        header: 'Delete Confirmation',
+        icon: 'pi pi-info-circle',
+        accept: () => {
+            this.msgs = [{severity:'info', summary:'Confirmed', detail:'Record deleted'}];
+            this.delete(hero);
+        },
+        reject: () => {
+            this.msgs = [{severity:'info', summary:'Rejected', detail:'You have rejected'}];
+        }
+    });
+  }
+  
 }

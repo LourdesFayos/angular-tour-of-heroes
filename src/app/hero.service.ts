@@ -90,6 +90,7 @@ export class HeroService {
       catchError(this.handleError<any>('updateHero'))
     );
   }
+
   //Metodo para añadir heroes
   addHero(hero: Hero): Observable<Hero> {
     return this.http.post<Hero>(this.heroesUrl, hero, this.httpOptions).pipe(
@@ -122,8 +123,6 @@ export class HeroService {
         catchError(this.handleError<Hero[]>('searchHeroes', []))
     );
   }
-
-
 
 }
 

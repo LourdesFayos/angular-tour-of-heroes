@@ -24,17 +24,10 @@ input {
 button {
     margin-top: 20px;
     margin-right: 20px;
-    //background-color: #eee;
     padding: 8px;
     border-radius: 9px;
-    //border-color: #929597;
-    font-size: 20px;
-    //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+    font-size: 20px;  
 }
-
-/*button:hover {
-    //background-color: #929597;
-}*/
 
 button:disabled {
     background-color: #eee;

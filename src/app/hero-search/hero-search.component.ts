@@ -9,6 +9,7 @@ import { HeroService } from '../hero.service';
   templateUrl: './hero-search.component.html',
   styleUrls: ['./hero-search.component.scss']
 })
+
 export class HeroSearchComponent implements OnInit {
   heroes$!: Observable<Hero[]>;
   private searchTerms = new Subject<string>();
@@ -19,6 +20,7 @@ export class HeroSearchComponent implements OnInit {
   search(term: string): void {
     this.searchTerms.next(term);
   }
+  
   /* debounceTime(300) -> esperamos 300ms despues de cada pulsación de teclas
     antes de tener en cuenta el termino.
 
