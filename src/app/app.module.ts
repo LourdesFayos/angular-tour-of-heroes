@@ -19,6 +19,7 @@ import { HeroFormComponent } from './hero-form/hero-form.component';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
 import { MessagesModule } from 'primeng/messages';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ConfirmDialogModule,
     MessagesModule,
     BrowserAnimationsModule,
+    DialogModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

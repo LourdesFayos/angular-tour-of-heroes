@@ -6,23 +6,23 @@
     border-left: 5px solid #a94442; /* red */
 }
 
-.form_group_label {
+.form-group_name {
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.form_button, .div_button {
+.form-control {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.hero-form_container_form_button, .hero-form_result_button {
     border-radius: 9px;
     margin-right: 20px;
 }
 
-.form_button:hover {
+.hero-form_container_form_button:hover {
     background-color: #42A948;
     color: white;
-}
-
-.form_group_input form-control {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .col-xs-3 {

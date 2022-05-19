@@ -1,27 +1,27 @@
 /* HeroDetailComponent's private CSS styles */
-.div_title {
+.hero-detail {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.hero-detail_title {
     padding-top: 35px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.div {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.div_container_label {
+.hero-detail_form_title {
     color: #435960;
     font-weight: bold;
     margin-right: 10px;
 }
 
-.div_container_input {
+.hero-detail_form_name {
     font-size: 1em;
     padding: .5rem;
 }
 
-.div_button {
+.hero-detail_button {
     margin-top: 20px;
     margin-right: 20px;
     padding: 8px;
@@ -29,7 +29,7 @@
     font-size: 20px;  
 }
 
-.div_button:disabled {
+.hero-detail_button:disabled {
     background-color: #eee;
     color: #ccc;
     cursor: auto;
