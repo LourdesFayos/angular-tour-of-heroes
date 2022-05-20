@@ -28,12 +28,12 @@
         margin-right: 20px;
         padding: 8px;
         border-radius: 9px;
-        font-size: 20px;  
-    }
-
-    &_button:disabled {
-        background-color: #eee;
-        color: #ccc;
-        cursor: auto;
+        font-size: 20px; 
+        
+        &:disabled {
+            background-color: #eee;
+            color: #ccc;
+            cursor: auto;
+        }
     }
 }

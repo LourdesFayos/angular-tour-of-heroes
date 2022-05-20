@@ -21,12 +21,6 @@ export class HeroService {
 
   constructor(private messageService: MessageService, private http: HttpClient) { }
 
-  /*getHeroes():Observable<Hero[]> {
-    const heroes = of(HEROES);
-    this.messageService.add('HeroService: fetched heroes');
-    return heroes;
-  }*/
-
   /* Hemos cambiado of() por http.get(), ambas funciones devuelven
   un Observable<Hero[]> */
   getHeroes(): Observable<Hero[]> {
@@ -38,12 +32,6 @@ export class HeroService {
       catchError(this.handleError<Hero[]>('getHeroes', []))
     );
   }
-
-  /*getHero(id: number): Observable<Hero> {
-    const hero = HEROES.find(h => h.id === id)!;
-    this.messageService.add(`HeroService: fetched hero id=${id}`);
-    return of(hero);
-  }*/
 
   /*Actualizamos el método getHero() para hacer la petición de 
   obtener el identificador del heroe (id) de la forma :baseURL/:id
@@ -125,5 +113,3 @@ export class HeroService {
   }
 
 }
-
-

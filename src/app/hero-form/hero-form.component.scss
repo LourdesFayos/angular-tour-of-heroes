@@ -24,11 +24,11 @@
             &_button {
                 border-radius: 9px;
                 margin-right: 20px;
-            }
 
-            &_button:hover {
-                background-color: #42A948;
-                color: white;
+                &:hover {
+                    background-color: #42A948;
+                    color: white;
+                }
             }
         }
     }
