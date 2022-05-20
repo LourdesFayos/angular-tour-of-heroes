@@ -19,13 +19,10 @@
     </div>
 
     <div class="heroes_new">
-        <label class="heroes_new_title" for="new-hero">Hero name: </label>
-        <input class="heroes_new_name" id="new-hero" #heroName />
-        <!-- ((click) le pasa el valor de la entrada a add() y luego 
-        borra esa entrada -->
-        <button class="heroes_new_button" type="button"  
-        (click)="add(heroName.value); heroName.value=''">Add hero
-        </button>
+        <p-button (click)="showBasicDialog()" icon="pi pi-external-link" label="Add Hero"></p-button>
+        <p-dialog [(visible)]="displayBasic" [style]="{width: '50vw'}" [baseZIndex]="10000">
+            <app-hero-form></app-hero-form>
+        </p-dialog>
     </div>
    
 </div>

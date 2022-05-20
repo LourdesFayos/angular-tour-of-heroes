@@ -1,46 +1,49 @@
 /* HeroesComponent's private CSS styles */
 .heroes {
     text-align: center;
-}
 
-.heroes_title {
-    text-align: center;
-    padding-bottom: 35px;
+    &_title {
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+    &_list {
+        margin: 0 0 2em 0;
+        list-style-type: none;
+        padding: 0;
+        width: 15em;
+
+        &_hero {
+            display:flex;
+            position: relative;
+            cursor: pointer;
+            text-align: left;
+        }
+    }
+
+    &_list .badge {
+        display: inline-block;
+        font-size: small;
+        color: white;
+        background-color: #37383a;
+        position: relative;
+        text-align: right;
+        margin-right: .8em; 
+    }
+
+    &_new {
+
+        &_button {
+            margin-left: 20px;
+            border-radius: 9px;
+        }
+
+        &_title {
+            margin-right: 10px;
+        }
+    }
 }
 
 .list-group {
     padding-left: 41%;
-}
-
-.heroes_list {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
-}
-
-.heroes_list_hero {
-    display:flex;
-    position: relative;
-    cursor: pointer;
-    text-align: left;
-}
-
-.heroes_list .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    background-color: #37383a;
-    position: relative;
-    text-align: right;
-    margin-right: .8em; 
-}
-
-.heroes_new_button {
-    margin-left: 20px;
-    border-radius: 9px;
-}
-
-.heroes_new_title {
-    margin-right: 10px;
 }

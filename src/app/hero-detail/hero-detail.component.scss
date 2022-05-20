@@ -2,35 +2,38 @@
 .hero-detail {
     text-align: center;
     padding-bottom: 10px;
-}
 
-.hero-detail_title {
-    padding-top: 35px;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    &_title {
+        padding-top: 35px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
-.hero-detail_form_title {
-    color: #435960;
-    font-weight: bold;
-    margin-right: 10px;
-}
+    &_form {
 
-.hero-detail_form_name {
-    font-size: 1em;
-    padding: .5rem;
-}
+        &_title {
+            color: #435960;
+            font-weight: bold;
+            margin-right: 10px;
+        }
 
-.hero-detail_button {
-    margin-top: 20px;
-    margin-right: 20px;
-    padding: 8px;
-    border-radius: 9px;
-    font-size: 20px;  
-}
+        &_name {
+            font-size: 1em;
+            padding: .5rem;
+        }
+    }
 
-.hero-detail_button:disabled {
-    background-color: #eee;
-    color: #ccc;
-    cursor: auto;
+    &_button {
+        margin-top: 20px;
+        margin-right: 20px;
+        padding: 8px;
+        border-radius: 9px;
+        font-size: 20px;  
+    }
+
+    &_button:disabled {
+        background-color: #eee;
+        color: #ccc;
+        cursor: auto;
+    }
 }

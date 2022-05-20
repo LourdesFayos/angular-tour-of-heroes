@@ -1,13 +1,16 @@
-.div_title {
-    text-align: center;
-    padding-bottom: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+.dashboard {
+    
+    &_title {
+        text-align: center;
+        padding-bottom: 35px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
-.div_container {
-    display:inline-flex;
-    text-align: center;
-    max-width: 1000px;
-    margin: .5rem auto;
-    margin-left: 18px;
+    &_container {
+        display:inline-flex;
+        text-align: center;
+        max-width: 1000px;
+        margin: .5rem auto;
+        margin-left: 18px;
+    }
 }

@@ -15,14 +15,31 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-.hero-form_container_form_button, .hero-form_result_button {
-    border-radius: 9px;
-    margin-right: 20px;
-}
+.hero-form {
 
-.hero-form_container_form_button:hover {
-    background-color: #42A948;
-    color: white;
+    &_container {
+
+        &_form {
+
+            &_button {
+                border-radius: 9px;
+                margin-right: 20px;
+            }
+
+            &_button:hover {
+                background-color: #42A948;
+                color: white;
+            }
+        }
+    }
+
+    &_result {
+
+        &_button {
+            border-radius: 9px;
+            margin-right: 20px;
+        }
+    }
 }
 
 .col-xs-3 {

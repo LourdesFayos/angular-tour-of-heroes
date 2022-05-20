@@ -1,52 +1,52 @@
 /* HeroSearch private styles */
+.hero-search {
+    &_title {
+        display: block;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 4rem;
+        margin-left: 25px;
+        margin-bottom: .5rem;
+        color: rgb(21, 20, 20);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-.hero-search_title {
-    display: block;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 4rem;
-    margin-left: 25px;
-    margin-bottom: .5rem;
-    color: rgb(21, 20, 20);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
+        &_box {
+            padding: .5rem;
+            width:100%;
+            max-width: 300px;
+            box-sizing: border-box;
+            display: block;
+        }
 
-.hero-search_title_box {
-    padding: .5rem;
-    width:100%;
-    max-width: 300px;
-    box-sizing: border-box;
-    display: block;
-}
+        &_box:focus {
+            outline: #c2c3c3 auto 1px;
+        }
+    }
 
-.hero-search_title_box:focus {
-    outline: #c2c3c3 auto 1px;
-}
+    &_result {
+        margin-top: 0;
+        padding-left: 0;
 
-.hero-search_result {
-    margin-top: 0;
-    padding-left: 0;
-}
+        &_list {
+            list-style-type: none;
 
-.hero-search_result_list {
-    list-style-type: none;
-}
+            &_name {
+                border-bottom: 1px solid rgb(95, 89, 89);
+                border-left: 1px solid rgb(95, 89, 89);
+                border-right: 1px solid rgb(95, 89, 89);
+                display: inline-block;
+                width: 100%;
+                max-width: 300px;
+                padding: .5rem;
+                box-sizing: border-box;
+                text-decoration: none;
+                color: rgb(48, 44, 44);
+            }
 
-.hero-search_result_list_name {
-    border-bottom: 1px solid rgb(95, 89, 89);
-    border-left: 1px solid rgb(95, 89, 89);
-    border-right: 1px solid rgb(95, 89, 89);
-    display: inline-block;
-    width: 100%;
-    max-width: 300px;
-    padding: .5rem;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: rgb(48, 44, 44);
-}
-
-.hero-search_result_list_name:hover {
-    background-color: #4b575a;
-    color: lightgrey;
+            &_name:hover {
+                background-color: #4b575a;
+                color: lightgrey;
+            }
+        }
+    }
 }

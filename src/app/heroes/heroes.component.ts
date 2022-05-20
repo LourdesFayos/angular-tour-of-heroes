@@ -17,6 +17,8 @@ export class HeroesComponent implements OnInit {
 
   msgs: Message[] = [];
 
+  displayBasic: boolean = false;
+
   //constructor(private heroService: HeroService) { }
   constructor(private confirmationService: ConfirmationService, private primengConfig: PrimeNGConfig, private heroService: HeroService) {}
   
@@ -34,6 +36,7 @@ export class HeroesComponent implements OnInit {
     name = name.trim();
     if (!name) { return; }
     this.heroService.addHero({ name } as Hero).subscribe(hero => {this.heroes.push(hero);});
+    this.displayBasic=false;
   }
   
  //Metodo que elimina el heroe de la lista
@@ -56,6 +59,10 @@ export class HeroesComponent implements OnInit {
             this.msgs = [{severity:'info', summary:'Rejected', detail:'You have rejected'}];
         }
     });
+  }
+
+  showBasicDialog() {
+    this.displayBasic = true;
   }
   
 }
