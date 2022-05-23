@@ -21,6 +21,8 @@ import { MessagesModule } from 'primeng/messages';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogModule } from 'primeng/dialog';
 
+import { TableModule } from 'primeng/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +42,7 @@ import { DialogModule } from 'primeng/dialog';
     MessagesModule,
     BrowserAnimationsModule,
     DialogModule,
+    TableModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

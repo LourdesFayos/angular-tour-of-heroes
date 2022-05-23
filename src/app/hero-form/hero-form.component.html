@@ -11,12 +11,12 @@
 
             <div class="form-group">
                 <label class="form-group_name" for="alterEgo">Alter Ego</label>
-                <input class="form-control" type="text" id="alterEgo" [(ngModel)]="model.alterEgo" name="alterEgo" #power="ngModel">
+                <input class="form-control" type="text" id="alterEgo" [(ngModel)]="model.alterEgo" name="alterEgo" #alterEgo="ngModel">
             </div>
 
             <div class="form-group">
                 <label class="form-group_name" for="power">Hero Power</label>
-                <select class="form-control" id="power" required [(ngModel)]="model.power" name="power">
+                <select class="form-control" id="power" required [(ngModel)]="model.power" name="power" #power = "ngModel">
                     <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
                 </select>
                 <div [hidden]="power.valid || power.pristine" class="alert alert-danger">Power is required</div>
@@ -45,6 +45,6 @@
         </div>
         <br>
         <button class="hero-form_result_button" type="button" (click)="submitted=false">Edit</button>
-        <button class="hero-form_result_button" type="button" (click)="addHero(name.value)">Add</button>
+        <button class="hero-form_result_button" type="button" (click)="addHero(name.value, power.value, alterEgo.value)">Add</button>
     </div>
 </div>

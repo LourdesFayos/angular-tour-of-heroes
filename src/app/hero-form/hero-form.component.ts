@@ -25,8 +25,8 @@ export class HeroFormComponent {
   }
 
   //Método que llama al método add de la clase heroesComponent, para anyadir el heroe a la lista
-  addHero(name: string) { 
-    this.heroesComponent.add(name); 
+  addHero(name: string, power: string, alterEgo?: string) { 
+    this.heroesComponent.add_Hero(name, power, alterEgo); 
   }
 
   newHero() {
