@@ -36,7 +36,6 @@ export class HeroesComponent implements OnInit {
   onNewHero():void {
     this.getHeroes();
     this.displayBasic=false;
-
   }
   
  //Metodo que elimina el heroe de la lista

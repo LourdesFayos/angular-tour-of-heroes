@@ -1,4 +1,5 @@
 <div class="hero-form">
+
     <div class="hero-form_container" [hidden]="submitted">
         <h1 class="hero-form_container_title">Hero Form</h1>
         <form class="hero-form_container_form" #heroForm="ngForm" (ngSubmit)="onSubmit()">
@@ -46,4 +47,5 @@
         <button class="hero-form_result_button" type="button" (click)="submitted=false">Edit</button>
         <button class="hero-form_result_button" type="button" (click)="addHero()">Add</button>
     </div>
+    
 </div>

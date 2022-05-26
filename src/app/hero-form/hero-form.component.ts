@@ -26,7 +26,6 @@ export class HeroFormComponent {
 
   ngOnInit() {}
   
-
   onSubmit() { 
     this.submitted = true; 
   }
