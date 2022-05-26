@@ -1,6 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroesComponent } from '../heroes/heroes.component';
+
+import { HeroService } from '../hero.service';
+import { convertPropertyBindingBuiltins } from '@angular/compiler/src/compiler_util/expression_converter';
+
 
 @Component({
   selector: 'app-hero-form',
@@ -16,17 +20,21 @@ export class HeroFormComponent {
 
   submitted = false;
 
-  constructor(private heroesComponent: HeroesComponent) {}
+  @Output() updateChange = new EventEmitter<any>();
+
+  constructor(private heroService: HeroService) {}
 
   ngOnInit() {}
+  
 
   onSubmit() { 
     this.submitted = true; 
   }
 
-  //Método que llama al método add de la clase heroesComponent, para anyadir el heroe a la lista
-  addHero(name: string, power: string, alterEgo?: string) { 
-    this.heroesComponent.add_Hero(name, power, alterEgo); 
+  //Anyade el heroe en la lista con los datos que se introducen en el formulario
+  addHero(): void {
+    const new_Hero = new Hero(42, this.model.name, this.model.power, this.model.alterEgo);
+    this.heroService.addHero(new_Hero).subscribe(hero => {this.updateChange.emit();});
   }
 
   newHero() {

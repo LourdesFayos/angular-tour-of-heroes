@@ -25,6 +25,7 @@ export class HeroesComponent implements OnInit {
   //Observable
   getHeroes():void {
     this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
+    
   }
 
   ngOnInit(): void {
@@ -32,22 +33,10 @@ export class HeroesComponent implements OnInit {
     this.primengConfig.ripple = true;
   }
 
-  /*add(name: string): void {
-    name = name.trim();
-    if (!name) { return; }
-    this.heroService.addHero({ name } as Hero).subscribe(hero => {this.heroes.push(hero);});
+  onNewHero():void {
+    this.getHeroes();
     this.displayBasic=false;
-  }*/
 
-  //Anyade el heroe en la lista con los datos que se introducen en el formulario
-  add_Hero(name: string, power: string, alterEgo?: string): void {
-    name = name.trim();
-    power = power.trim();
-    alterEgo = alterEgo;
-
-    if (!name || !power) { return; }
-    this.heroService.addHero({ name, power, alterEgo } as Hero).subscribe(hero => {this.heroes.push(hero);});
-    this.displayBasic=false;
   }
   
  //Metodo que elimina el heroe de la lista
